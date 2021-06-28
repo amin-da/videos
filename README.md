@@ -1,2 +1,2 @@
 # videos
-simple Site for Movies with JS
+Simple Site for Movies with JS
