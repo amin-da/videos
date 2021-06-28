@@ -1,0 +1,286 @@
+@font-face {
+  font-family: mikhak;
+  src: url("./fonts/Mikhak-Medium.woff2");
+}
+
+* {
+  margin: 0;
+  font-family: mikhak;
+  direction: rtl !important;
+}
+/* برای پیاده سازی اسکرول نرم  */
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: rgb(181, 235, 72);
+}
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+}
+
+.logo-container {
+  flex: 1;
+}
+.logo {
+  font-size: 30px;
+  color: greenyellow;
+}
+.menu-container {
+  flex: 6;
+}
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+.menu-list-item {
+  cursor: pointer;
+  margin-right: 20px;
+}
+.menu-list-item.active {
+  font-weight: bold;
+}
+.profile-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.profile-text-container {
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.user-profile-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.toggle {
+  width: 40px;
+  height: 22px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.toggle-icon {
+  color: goldenrod;
+  padding: 2px;
+}
+.toggle-ball {
+  width: 19px;
+  height: 20px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  right: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+.sidebar {
+  width: 50px;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.right-menu-icon {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 45px;
+  cursor: pointer;
+}
+
+.container {
+  min-height: calc(100vh - 50px);
+  background-color: #151515;
+  color: white;
+}
+
+.content-container {
+  margin-right: 50px;
+}
+
+.featured-contetn {
+  height: 50vh;
+  padding: 50px;
+  direction: ltr !important;
+}
+.featured-title {
+  width: 200px;
+}
+.featured-desc {
+  width: 500px;
+  color: lightgray;
+  margin: 30px 0px;
+}
+.featured-button {
+  background-color: yellowgreen;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.movie-list-container {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.movie-list {
+  display: flex;
+  align-items: center;
+  height: 340px;
+  transform: translateX(0);
+  transition: all 1s ease-in;
+}
+
+.movie-list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-list-item {
+  margin-right: 10px;
+  position: relative;
+}
+.movie-list-item:hover .movie-list-item-img {
+  transform: scale(1.1);
+  margin: 0 10px;
+  opacity: 0.5;
+}
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+}
+.movie-list-item-img {
+  width: 290px;
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.7s ease-in-out;
+  border-radius: 20px;
+}
+
+.movie-list-item-title {
+  background-color: #333;
+  padding: 0 10px;
+  font-size: 32px;
+  font-weight: 600;
+  position: absolute;
+  top: 10%;
+  left: 40px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.movie-list-item-desc {
+  background-color: #333;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  position: absolute;
+  top: 30%;
+  left: 40px;
+  width: 200px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.movie-list-item-button {
+  padding: 8px 12px;
+  background-color: yellowgreen;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.movie-list-arrow {
+  position: absolute;
+  top: 110px;
+  font-size: 100px;
+  right: 0;
+  color: lightgray;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* Theme */
+.container.active {
+  background-color: white;
+}
+
+.navbar-container.active {
+  background-color: white;
+
+  color: black;
+}
+
+.sidebar.active {
+  background-color: white;
+}
+.right-menu-icon.active {
+  color: black;
+}
+
+.toggle.active {
+  background-color: black;
+}
+.toggle-ball.active {
+  background-color: rgba(255, 255, 255, 0.6);
+  transform: translateX(-20px);
+}
+
+.movie-list-title.active {
+  color: black;
+}
+
+.up-to-top {
+  margin: 20px;
+  font-size: 30px;
+}
+.up-to-top:hover {
+  color: rgb(173, 226, 68);
+}
+
+a.active {
+  color: black;
+}
+
+/*********** Resposive logic *******/
+
+@media only screen and (max-width: 940px) {
+  .menu-container{
+    display: none;
+  }
+}

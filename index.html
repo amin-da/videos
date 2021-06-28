@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>ویدئوس</title>
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <h1 class="logo">ویدئوس</h1>
+        </div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-item active">خانه</li>
+            <li class="menu-list-item"><a class="a" href="#films">فیلم ها</a></li>
+            <li class="menu-list-item"><a class="a" href="#serial">سریال ها</a></li>
+            <li class="menu-list-item"><a class="a" href="#fav">محبوب ها</a></li>
+            <li class="menu-list-item"><a class="a" href="#new">جدیدترن ها</a></li>
+          </ul>
+        </div>
+        <div class="profile-container">
+          <img src="./img/user1.jpg" alt="" class="user-profile-img" />
+          <div class="profile-text-container">
+            <span class="profile-text">پروفایل</span>
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="toggle">
+              <i class="fas fa-moon toggle-icon"></i>
+            <i class="fas fa-sun toggle-icon"></i>
+            <div class="toggle-ball"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <aside class="sidebar">
+      <i class="fas fa-search right-menu-icon"></i>
+      <i class="fas fa-home right-menu-icon"></i>
+      <i class="fas fa-users right-menu-icon"></i>
+      <i class="fas fa-bookmark right-menu-icon"></i>
+      <i class="fas fa-tv right-menu-icon"></i>
+      <i class="fas fa-hourglass-start right-menu-icon"></i>
+      <i class="fas fa-shopping-cart right-menu-icon"></i>
+    </aside>
+    <main class="container">
+      <div class="content-container">
+        <div
+          class="featured-contetn"
+          style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515)
+           , url('./img/batman2.jpeg');"
+        >
+          <img src="./img/batman-logo.png" alt="" class="featured-title" />
+          <p class="featured-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad,
+            eveniet dolorem. Sint natus atque, similique iure consectetur magni
+            illo ab consequuntur nulla ad vitae, quod inventore molestiae?
+            Pariatur, harum a.
+          </p>
+          <button class="featured-button">تماشا کنید</button>
+        </div>
+        <div class="movie-list-container" id="films">
+          <h1 class="movie-list-title">فیلم ها</h1>
+          <div class="movie-list-wrapper">
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img src="./img/10.jpg" alt="" class="movie-list-item-img" />
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-desc">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <button class="movie-list-item-button">دیدن</button>
+              </div>
+              <div class="movie-list-item">
+                  <img src="./img/12.jpg" alt="" class="movie-list-item-img" />
+                  <span class="movie-list-item-title">Her</span>
+                  <p class="movie-list-item-desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <button class="movie-list-item-button">دیدن</button>
+                </div>
+                <div class="movie-list-item">
+                    <img src="./img/17.jpg" alt="" class="movie-list-item-img" />
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                    <button class="movie-list-item-button">دیدن</button>
+                  </div>
+                  <div class="movie-list-item">
+                      <img src="./img/18.jpg" alt="" class="movie-list-item-img" />
+                      <span class="movie-list-item-title">Her</span>
+                      <p class="movie-list-item-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      </p>
+                      <button class="movie-list-item-button">دیدن</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img src="./img/5.jpg" alt="" class="movie-list-item-img" />
+                        <span class="movie-list-item-title">Her</span>
+                        <p class="movie-list-item-desc">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </p>
+                        <button class="movie-list-item-button">دیدن</button>
+                      </div>
+                      <div class="movie-list-item">
+                          <img src="./img/6.jpg" alt="" class="movie-list-item-img" />
+                          <span class="movie-list-item-title">Her</span>
+                          <p class="movie-list-item-desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                          </p>
+                          <button class="movie-list-item-button">دیدن</button>
+                        </div>
+                        <div class="movie-list-item">
+                          <img src="./img/7.jpg" alt="" class="movie-list-item-img" />
+                          <span class="movie-list-item-title">Her</span>
+                          <p class="movie-list-item-desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                          </p>
+                          <button class="movie-list-item-button">دیدن</button>
+                        </div>
+                       
+            </div>
+            <i class="fas fa-chevron-right movie-list-arrow"></i>
+          </div>
+        </div>
+
+        <div class="movie-list-container" id="serial">
+            <h1 class="movie-list-title">سریال ها</h1>
+            <div class="movie-list-wrapper">
+              <div class="movie-list">
+                <div class="movie-list-item">
+                  <img src="./img/9.jpg" alt="" class="movie-list-item-img" />
+                  <span class="movie-list-item-title">Her</span>
+                  <p class="movie-list-item-desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                  <button class="movie-list-item-button">دیدن</button>
+                </div>
+                <div class="movie-list-item">
+                    <img src="./img/3.jpg" alt="" class="movie-list-item-img" />
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                    <button class="movie-list-item-button">دیدن</button>
+                  </div>
+                  <div class="movie-list-item">
+                      <img src="./img/7.jpg" alt="" class="movie-list-item-img" />
+                      <span class="movie-list-item-title">Her</span>
+                      <p class="movie-list-item-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      </p>
+                      <button class="movie-list-item-button">دیدن</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img src="./img/4.jpg" alt="" class="movie-list-item-img" />
+                        <span class="movie-list-item-title">Her</span>
+                        <p class="movie-list-item-desc">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </p>
+                        <button class="movie-list-item-button">دیدن</button>
+                      </div>
+                      <div class="movie-list-item">
+                          <img src="./img/5.jpg" alt="" class="movie-list-item-img" />
+                          <span class="movie-list-item-title">Her</span>
+                          <p class="movie-list-item-desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                          </p>
+                          <button class="movie-list-item-button">دیدن</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="./img/12.jpg" alt="" class="movie-list-item-img" />
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                            <button class="movie-list-item-button">دیدن</button>
+                          </div>
+              </div>
+              <i class="fas fa-chevron-right movie-list-arrow"></i>
+            </div>
+          </div>
+
+          <div
+          class="featured-contetn"
+          style="background:linear-gradient(to bottom,rgba(0,0,0,0),#151515)
+           , url('./img/f-2.jpg');"
+        >
+          <img src="./img/f-t-2.png" alt="" class="featured-title" />
+          <p class="featured-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad,
+            eveniet dolorem. Sint natus atque, similique iure consectetur magni
+            illo ab consequuntur nulla ad vitae, quod inventore molestiae?
+            Pariatur, harum a.
+          </p>
+          <button class="featured-button">تماشا کنید</button>
+        </div>
+
+          <div class="movie-list-container" id="fav">
+              <h1 class="movie-list-title">محبوب ها</h1>
+              <div class="movie-list-wrapper">
+                <div class="movie-list">
+                  <div class="movie-list-item">
+                    <img src="./img/17.jpg" alt="" class="movie-list-item-img" />
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                    <button class="movie-list-item-button">دیدن</button>
+                  </div>
+                  <div class="movie-list-item">
+                      <img src="./img/12.jpg" alt="" class="movie-list-item-img" />
+                      <span class="movie-list-item-title">Her</span>
+                      <p class="movie-list-item-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      </p>
+                      <button class="movie-list-item-button">دیدن</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img src="./img/13.jpg" alt="" class="movie-list-item-img" />
+                        <span class="movie-list-item-title">Her</span>
+                        <p class="movie-list-item-desc">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </p>
+                        <button class="movie-list-item-button">دیدن</button>
+                      </div>
+                      <div class="movie-list-item">
+                          <img src="./img/14.jpg" alt="" class="movie-list-item-img" />
+                          <span class="movie-list-item-title">Her</span>
+                          <p class="movie-list-item-desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                          </p>
+                          <button class="movie-list-item-button">دیدن</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="./img/15.jpg" alt="" class="movie-list-item-img" />
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                            <button class="movie-list-item-button">دیدن</button>
+                          </div>
+                          <div class="movie-list-item">
+                              <img src="./img/16.jpg" alt="" class="movie-list-item-img" />
+                              <span class="movie-list-item-title">Her</span>
+                              <p class="movie-list-item-desc">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                              </p>
+                              <button class="movie-list-item-button">دیدن</button>
+                            </div>
+                </div>
+                <i class="fas fa-chevron-right movie-list-arrow"></i>
+              </div>
+            </div>
+
+            <div class="movie-list-container" id="new">
+                <h1 class="movie-list-title">جدیدترین ها</h1>
+                <div class="movie-list-wrapper">
+                  <div class="movie-list">
+                    <div class="movie-list-item">
+                      <img src="./img/3.jpg" alt="" class="movie-list-item-img" />
+                      <span class="movie-list-item-title">Her</span>
+                      <p class="movie-list-item-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      </p>
+                      <button class="movie-list-item-button">دیدن</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img src="./img/4.jpg" alt="" class="movie-list-item-img" />
+                        <span class="movie-list-item-title">Her</span>
+                        <p class="movie-list-item-desc">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </p>
+                        <button class="movie-list-item-button">دیدن</button>
+                      </div>
+                      <div class="movie-list-item">
+                          <img src="./img/5.jpg" alt="" class="movie-list-item-img" />
+                          <span class="movie-list-item-title">Her</span>
+                          <p class="movie-list-item-desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                          </p>
+                          <button class="movie-list-item-button">دیدن</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img src="./img/6.jpg" alt="" class="movie-list-item-img" />
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </p>
+                            <button class="movie-list-item-button">دیدن</button>
+                          </div>
+                          <div class="movie-list-item">
+                              <img src="./img/7.jpg" alt="" class="movie-list-item-img" />
+                              <span class="movie-list-item-title">Her</span>
+                              <p class="movie-list-item-desc">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                              </p>
+                              <button class="movie-list-item-button">دیدن</button>
+                            </div>
+                            <div class="movie-list-item">
+                                <img src="./img/8.jpg" alt="" class="movie-list-item-img" />
+                                <span class="movie-list-item-title">Her</span>
+                                <p class="movie-list-item-desc">
+                                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </p>
+                                <button class="movie-list-item-button">دیدن</button>
+                              </div>
+                  </div>
+                  <i class="fas fa-chevron-right movie-list-arrow"></i>
+                </div>
+              </div>
+              <a class="a" href="#navbar"><i class="fas fa-arrow-up up-to-top"></i></a>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
