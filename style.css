@@ -111,6 +111,11 @@ a:hover {
   margin-bottom: 45px;
   cursor: pointer;
 }
+.featured-contetn {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+    url(./img/batman2.jpeg);
+  object-fit: contain;
+}
 
 .container {
   min-height: calc(100vh - 50px);
@@ -179,7 +184,7 @@ a:hover {
   opacity: 1;
 }
 .movie-list-item-img {
-  width: 290px;
+  width: 295px;
   height: 200px;
   object-fit: cover;
   transition: all 0.7s ease-in-out;
@@ -280,7 +285,7 @@ a.active {
 /*********** Resposive logic *******/
 
 @media only screen and (max-width: 940px) {
-  .menu-container{
+  .menu-container {
     display: none;
   }
 }

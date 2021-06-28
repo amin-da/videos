@@ -8,12 +8,12 @@ arrows.forEach((item, index) => {
   //کدها برای عمل کلیک و جابه جایی آیتم ها
   item.addEventListener("click", () => {
     // محدودیت کلیک متناسب با سایز صفحه
-    const ratio = Math.floor(window.innerWidth / 270);
+    const ratio = Math.floor(window.innerWidth / 290);
     clickCounter++;
     if (itemLength - (4 + clickCounter) + (4 - ratio) >= 0) {
-      movieLists[index].style.transform = `translateX(${movieLists[index]
-        .computedStyleMap()
-        .get("transform")[0].x.value + 300}px)`;
+      movieLists[index].style.transform = `translateX(${
+        movieLists[index].computedStyleMap().get("transform")[0].x.value + 300
+      }px)`;
     } else {
       movieLists[index].style.transform = "translateX(0)";
       clickCounter = 0;
@@ -29,7 +29,7 @@ const items = document.querySelectorAll(
 );
 
 ball.addEventListener("click", () => {
-  items.forEach(item => {
+  items.forEach((item) => {
     item.classList.toggle("active");
   });
   ball.classList.toggle("active");
